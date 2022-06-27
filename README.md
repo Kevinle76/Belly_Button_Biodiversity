@@ -13,13 +13,22 @@ Methods for Analysis:
 3. Create bar chart.
 ![barchart](https://user-images.githubusercontent.com/100891182/176012650-567ed39c-e22a-4849-b687-d81189e7c409.png)
 
+
 4. Create bubble chart
-![alt=""](bubblechart.png)
+![bubblechart](https://user-images.githubusercontent.com/100891182/176012740-d4d84ca0-08a6-4663-8d9a-b021d59792d2.png)
+
+
+
 5. Display the sample metadata.
-6. Update all the plots when a new sample is selected, deploy the app to a free static page hosting service.
-![alt=""](dashboard.png)
+![dashboard](https://user-images.githubusercontent.com/100891182/176012761-e58e2640-8ef2-4eb8-83d0-239e0d3fb01c.png)
+
+
+7. Update all the plots when a new sample is selected, deploy the app to a free static page hosting service.
+
 7. Adapt the Gauge Chart.
-![alt=""](gauge.png)
+
+![gauge](https://user-images.githubusercontent.com/100891182/176012803-7c4d7215-58d3-4188-9ef4-4a293748cbfd.png)
+
 
 Preferences:
 

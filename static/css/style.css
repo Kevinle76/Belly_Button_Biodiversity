@@ -1,0 +1,19 @@
+
+.panel-default > .panel-heading-custom {
+    background: #764ed2; color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.jumbotron {
+	background-image: url("D://GT-VIRT-DATA-PT-03-2022-U-LOL/Belly_Button_Biodiversity/static/img/header.png");
+	background-size: 100%;
+    text-align: center;   
+}
+
+.jumbotron > h1 {
+    text-shadow: 1px 1px 2px black;
+}

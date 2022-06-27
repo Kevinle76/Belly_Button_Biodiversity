@@ -15,9 +15,6 @@ function optionChanged(userChoice) {
     BuildCharts(userChoice)
 }
 
-
-
-
 function BuildCharts(sampleId) {
     let data = d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json").then(data => {
         const samples = data.samples;
@@ -56,29 +53,30 @@ function BuildCharts(sampleId) {
                     type: 'bar',
                     orientation: 'h',
                     width: 0.6,
-                    marker: { color: '(55, 83, 109)' }
+                    marker: { 
+                        color: 'rgb(242, 113, 102)' }
                 },
             ];
             let layout = {
-                title: 'Top 10 OTU',
+                title: 'Top 10 OTUs',
 
                 showlegend: false,
                 xaxis: {
                     tickangle: 0,
                     zeroline: true,
-                    title: "Sample Value",
+                    title: "Sample Values",
                 },
                 yaxis: {
                     zeroline: true,
                     gridwidth: 1,
-                    title: "OTU ID"
+                    title: "OTU IDs"
                 },
                 //bargap: 0.01,
                 height: 370,
                 width: 750,
                 margin: { t:40 , l: 90, b: 35, r: 20 },
                 barmode: 'stack',
-                paper_bgcolor: "lavender",
+                paper_bgcolor: "pink",
 
             };
             Plotly.newPlot('bar', data, layout);
@@ -94,7 +92,9 @@ function BuildCharts(sampleId) {
                 text: otu_labels.slice(0,10).reverse(), // otu_labels
                 mode: 'markers',
                 marker: {
-                    // color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)', 'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+                    
+                    color: otu_ids,
+                    colorscale: 'YlOrRd',
                     size: samples_values.slice(0,10).reverse() //size = sample value
                 }
             };
@@ -102,7 +102,7 @@ function BuildCharts(sampleId) {
             let dataBubble = [trace1];
 
             var layout = {
-                title: 'Top 10 OTU',
+                title: 'Top 10 OTUs',
                 showlegend: false,
                 height: 600,
                 width: 1150,
@@ -111,14 +111,14 @@ function BuildCharts(sampleId) {
                 xaxis: {
                     tickangle: 0,
                     zeroline: false,
-                    title: "OTU ID"
+                    title: "OTU IDs"
                 },
                 yaxis: {
                     zeroline: false,
                     gridwidth: 1,
-                    title: "Sample Value",
+                    title: "Sample Values",
                 },
-                paper_bgcolor: "lavender",
+                paper_bgcolor: "pink",
             };
             console.log(data)
             Plotly.newPlot('bubble', dataBubble, layout, {scrollZoom: true});
@@ -129,17 +129,18 @@ function BuildCharts(sampleId) {
                 {
                     domain: { x: [0, 1], y: [0, 1] },
                     value: wfreq, //Washing frequency
-                    title: { text: "Washing frequency" },
+                    title: { text: "Washing Frequency" },
                     type: "indicator",
 
                     mode: "gauge+number+delta",
                     delta: { reference: 4, increasing: { color: 'green' } },
                     gauge: {
                         axis: { range: [0, 9], tickwidth: 1, tickcolor: "darkblue" },
-                        bar:{color: 'blue'},
+                        bar:{color: 'pink'},
                         steps: [
-                            { range: [0, 4], color: "red" },
-                            { range: [4, 9], color: "green" }
+                            { range: [0, 3], color: 'rgb(253, 162, 73)' },
+                            { range: [3, 6], color: 'rgb(242, 113, 102)' },
+                            { range: [6, 9], color: 'rgb(166, 77, 104)' },
                         ],
                         threshold: {
                             line: { color: "grey", width: 4 },
@@ -147,15 +148,15 @@ function BuildCharts(sampleId) {
                             value: 9
                         }
                     },
-                    bgcolor: "lavender",
+                    bgcolor: "pink",
                 }
             ];
             var layout = {
                 width: 200,
                 height: 370,
                 margin: { t: 25, r: 25, l: 25, b: 25 },
-                paper_bgcolor: "lavender",
-                font: { color: "darkblue", family: "Arial" }
+                paper_bgcolor: "pink",
+                font: { color: "black", family: "Arial" }
             };
 
             

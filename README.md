@@ -1,10 +1,11 @@
 # Belly_Button_Biodiversity
+
 ## Background:
 In this assignment, we will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
-Methods for Analysis:
+## Methods for Analysis:
 
 1. Utilized data:  https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
 
@@ -34,7 +35,7 @@ Methods for Analysis:
 ![gauge](https://user-images.githubusercontent.com/100891182/176012803-7c4d7215-58d3-4188-9ef4-4a293748cbfd.png)
 
 
-Preferences:
+## Preferences:
 
 
 Hulcr, J. et al. (2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)

@@ -11,7 +11,8 @@ Methods for Analysis:
 
 
 3. Create bar chart.
-![alt=""](D:\GT-VIRT-DATA-PT-03-2022-U-LOL\Belly_Button_Biodiversity\static\img\barchart.png)
+![barchart](https://user-images.githubusercontent.com/100891182/176012650-567ed39c-e22a-4849-b687-d81189e7c409.png)
+
 4. Create bubble chart
 ![alt=""](bubblechart.png)
 5. Display the sample metadata.
